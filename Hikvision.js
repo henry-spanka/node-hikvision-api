@@ -17,7 +17,7 @@ class Hikvision extends events.EventEmitter {
         this.triggerActive = false;
         this.logToConsole = options.log;
 
-        this.connect(options);
+        this.connect();
     }
 
     connect() {
