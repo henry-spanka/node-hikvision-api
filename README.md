@@ -65,40 +65,40 @@ hikvision.on('alarm', (code, action, index) => {
 ## Functions:
 ```javascript
 // Switch Camera to Night Profile
-hikvision.dayProfile()
+hikvision.dayProfile();
 
 // Switch Camera to Night Profile
-hikvision.nightProfile()
+hikvision.nightProfile();
 
 // Issue hikvision RAW PTZ Command (See API Manual in GitHub Wiki)
 hikvision.ptzCommand(cmd,arg1,arg2,arg3,arg4)
 
 // Go To Preset
-hikvision.ptzPreset(int)
+hikvision.ptzPreset(int);
 
 // PTZ Zoom, input level: positive = zoom in / negative = zoom out
-hikvision.ptzZoom(float)
+hikvision.ptzZoom(float);
 
 // PTZ Move
 // Directions = Up/Down/Left/Right/LeftUp/RightUp/LeftDown/RightDown
 // Actions = start/stop
 // Speed = 1-8
-hikvision.ptzMove(direction,action,speed)
+hikvision.ptzMove(direction,action,speed);
 
 // Request current PTZ Status
-hikvision.ptzStatus()
+hikvision.ptzStatus();
 
 // Callback for any Alarm (Motion Detection/Video Loss & Blank/Alarm Inputs)
-hikvision.on('alarm', function(code,action,index){  });
+hikvision.on('alarm', (code, action, index) => {  });
 
 // Callback for PTZ Status
-hikvision.on('ptzStatus', function(data){  });
+hikvision.on('ptzStatus', (data) => {  });
 
 // Callback on connect
-hikvision.on('connect', function(){  });
+hikvision.on('connect', () => {  });
 
 // Callback on error
-hikvision.on('error', function(error){  });
+hikvision.on('error', (error) => {  });
 
 ```
 
