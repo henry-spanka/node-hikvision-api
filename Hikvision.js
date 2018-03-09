@@ -1,7 +1,7 @@
 const net = require('net');
 const events = require('events');
 const request = require('request');
-const NetKeepAlive = require('net-keepalive');
+// const NetKeepAlive = require('net-keepalive');
 const xml2js = require('xml2js');
 
 const parser = new xml2js.Parser();
@@ -31,8 +31,8 @@ class Hikvision extends events.EventEmitter {
             client.write(header);
             client.setKeepAlive(true, 1000);
 
-            NetKeepAlive.setKeepAliveInterval(client, 5000);	// sets TCP_KEEPINTVL to 5s
-            NetKeepAlive.setKeepAliveProbes(client, 12);	// 60s and kill the connection.
+            // NetKeepAlive.setKeepAliveInterval(client, 5000);	// sets TCP_KEEPINTVL to 5s
+            // NetKeepAlive.setKeepAliveProbes(client, 12);	// 60s and kill the connection.
 
             this.handleConnection(this.options);
         });
