@@ -5,7 +5,6 @@
   "main": "Hikvision.js",
   "dependencies": {
     "xml2js": "latest",
-    "net-keepalive": "latest",
     "request": "latest"
   },
   "devDependencies": {},
