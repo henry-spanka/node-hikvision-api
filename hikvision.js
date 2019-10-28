@@ -179,7 +179,7 @@ hikvision.prototype.nightProfile = function () {
 // Handle alarms
 function handleData(self, data) {
 	parser.parseString(data, function(err, result) {
-		if (result) {
+		if (result && 'EventNotificationAlert' in result) {
 			var code = result['EventNotificationAlert']['eventType'][0]
 			var action = result['EventNotificationAlert']['eventState'][0]
 			var index = parseInt(result['EventNotificationAlert']['channelID'][0])
