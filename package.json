@@ -1,6 +1,6 @@
 {
   "name": "node-hikvision-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Hikvision HTTP API Module",
   "main": "hikvision.js",
   "dependencies": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nayrnet/node-hikvision-api.git"
+    "url": "git+https://github.com/henry-spanka/node-hikvision-api.git"
   },
   "keywords": [
     "Hikvision",
@@ -24,10 +24,10 @@
     "Security Camera",
     "Home Automation"
   ],
-  "author": "Ryan Hunt",
+  "author": "Henry Spanka",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/nayrnet/node-hikvision-api/issues"
+    "url": "https://github.com/henry-spanka/node-hikvision-api/issues"
   },
-  "homepage": "https://github.com/nayrnet/node-hikvision-api#readme"
+  "homepage": "https://github.com/henry-spanka/node-hikvision-api#readme"
 }

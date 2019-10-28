@@ -113,3 +113,4 @@ hikvision.on('error', function(error){  });
 
 ## About:
 By: Ryan Hunt
+Modified by: Henry Spanka
