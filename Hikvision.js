@@ -188,7 +188,7 @@ class Hikvision extends events.EventEmitter {
             if (result && 'EventNotificationAlert' in result) {
                 let code = result['EventNotificationAlert']['eventType'][0];
                 let action = result['EventNotificationAlert']['eventState'][0];
-                const index = parseInt(result['EventNotificationAlert']['channelID'][0]);
+                const index = parseInt('channelID' in result['EventNotificationAlert'] ? result['EventNotificationAlert']['channelID'][0] : result['EventNotificationAlert']['dynChannelID'][0]);
                 const count = parseInt(result['EventNotificationAlert']['activePostCount'][0]);
 
                 // give codes returned by camera prettier and standardized description
